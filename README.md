@@ -1,24 +1,26 @@
 # Stock Analysis Project
 
-This is a beginner Python stock analysis project built in Google Colab.
+A beginner Python stock analysis project built in Google Colab and organized into a modular GitHub repository.
 
 ## Features
-- Downloads stock data
+- Downloads stock price data
 - Calculates daily returns
 - Calculates 3-day and 5-day moving averages
 - Generates trend and action signals
 - Backtests a simple moving-average strategy
 - Compares multiple stocks
-- Saves a ranked CSV summary
-- Saves a strategy edge bar chart
+- Builds a ranked summary table
+- Saves results to CSV
+- Creates a strategy edge bar chart
 
 ## Project Structure
-- `main.py` - main project runner
-- `src/data_loader.py` - load stock data
-- `src/indicators.py` - indicator calculations
-- `src/signals.py` - trend and action signal logic
-- `src/backtest.py` - backtesting logic
-
-## Outputs
-- `stock_summary_ranked.csv`
-- `strategy_edge_chart.png`
+```text
+stock-analysis-project/
+├── README.md
+├── main.py
+├── requirements.txt
+└── src/
+    ├── backtest.py
+    ├── data_loader.py
+    ├── indicators.py
+    └── signals.py
