@@ -1,8 +1,9 @@
+import os
 import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 
-sys.path.append("/content/stock_project/src")
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 
 from data_loader import load_stock_data
 from indicators import add_daily_return, add_moving_average_3, add_moving_average_5
